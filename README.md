@@ -2,6 +2,11 @@
 
 A global inventory and suit builder plugin for the AC:Unreal client. When the plugin is enabled, it will read and appraise all items on the character and save them to a database. Items from each character can then be filtered, searched or added to a suit building tool. The categories, filters and columns follow Oracle of Dereth's Inventory window. Using the included HTML tool, you can convert your existing Virindi Global Inventory database found at VirindiPlugins\VirindiGlobalInventory\_Server.db
 
+<img width="803" height="269" alt="gi_new1" src="https://github.com/user-attachments/assets/80059cc9-96ba-4f11-9c44-334d1e8f9335" />
+<img width="450" height="659" alt="gi_new2" src="https://github.com/user-attachments/assets/75a8e0ef-22db-4867-82ba-38730f4bea9a" />
+<img width="458" height="288" alt="gi_new3" src="https://github.com/user-attachments/assets/558aed3f-7270-46c2-a4db-b690f8f4348c" />
+<img width="457" height="360" alt="gi_new4" src="https://github.com/user-attachments/assets/85959884-9997-4007-9191-97b76f98f013" />
+
 ## Requirements
 
 - AC:Unreal client v146 or newer.
