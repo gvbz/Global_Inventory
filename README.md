@@ -1,6 +1,6 @@
 # Global Inventory
 
-A plugin for the AC:Unreal client. It saves the items of each character that logs in with the plugin enabled, and searches the items of every saved character on the server in one window. The categories, filters and columns follow Oracle of Dereth's Inventory window. It also builds armor suits from those items and can import a Virindi Global Inventory database.
+A global inventory and suit builder plugin for the AC:Unreal client. When the plugin is enabled, it will read and appraise all items on the character and save them to a database. Items from each character can then be filtered, searched or added to a suit building tool. The categories, filters and columns follow Oracle of Dereth's Inventory window. Using the included HTML tool, you can convert your existing Virindi Global Inventory database found at VirindiPlugins\VirindiGlobalInventory\_Server.db
 
 ## Requirements
 
@@ -10,7 +10,8 @@ A plugin for the AC:Unreal client. It saves the items of each character that log
 
 1. Unzip into `ACUnreal\Saved\ClientPlugins\Installed`. The path ends in `Installed\Global_Inventory\plugin.json`.
 2. Open the plugin menu, press **Refresh**, then **Enable** Global Inventory.
-3. Log in each character once with the plugin enabled, so its items are saved.
+3. Log in each character once with the plugin enabled and wait until all items are appraised and the characters database is saved.
+4. Alternately, you can import your existing Virindi Global Inventory database.
 
 ## Update
 
@@ -19,23 +20,25 @@ Replace the files in `Installed\Global_Inventory` and press **Refresh**. Saved i
 ## Global Inventory
 
 - Columns: Character, Item Name, Type, Effect, Info and Details. Click a header to sort. With weapons listed, the Info header cycles OD, attack, melee defense and workmanship.
-- Categories: Weapons, Armor, Clothing, Jewelry, Cloaks, Summons, Aetheria, Salvage and Others, one at a time. The ticked category shows its sub-filters (armor slots and sets, weapon types and elements, aetheria colors and surges, and so on).
+- Categories: Weapons, Armor, Clothing, Jewelry, Cloaks, Summons, Aetheria, Salvage and Others. Only one selection can be made at a time, with exception of Doubles. The ticked category shows its sub-filters (armor slots and sets, weapon types and elements, aetheria colors and surges, and so on).
 - **Doubles**: items with two or more cantrips of their highest tier.
 - **Worn**: shows worn items (hidden while unticked).
 - Filter box: every word must appear; "quoted phrase"; `word*2` means at least twice.
 - Click a row to show the item's description in chat. An item on the logged-in character is also selected. Hover a cell for its full text.
 - **Export JSON** writes the items listed to `Profiles\global_inventory\Library\Export`.
-- **Add to suit**: select an item, pick a slot in the list, press the button.
+- **Add to suit**: select an item, pick a slot in the list, press the Add button.
 - The filter, ticked boxes and sort are shared by all characters.
 
 ## Suit Builder
 
-17 slots: 9 armor, shirt, pants, necklace, trinket, 2 bracelets and 2 rings. It starts with the worn suit.
+The suit builder page is a tool where you can build and save different suits using items from the global inventory, it can also automatically fill empty slots using a set of constraint rules. Filling of the empty slots is based on the Primary and Secondary set type selections and CD/CDR filters, along with the characters missing cantrips. Missing cantrips are determined by reading the characters specialized and trained skills, and comparing them against active cantrip spells and the cantrip priority table. Triple and double rated pieces that fit the missing cantrips will always be considered first, and in cases where they do not fit, a list of missed opportunity items will be displayed (future). This is followed by rated single legendary pieces and then finally non-rated single legendary pieces. The reading will always start with Legendary, but the same order will follow with Epic, Major, etc. if available.
+
+17 slots: 9 armor, shirt, pants, necklace, trinket, 2 bracelets and 2 rings. Slots are initially filled with your worn suit.
 
 - Columns: D, DR, CD, CDR, V, HB, MD, Work, Tinks and Cantrips. The last row totals D to MD.
 - Click an item's icon to remove it. **Clear Armor** removes the 9 armor pieces.
-- Saved suits: pick one in the list, or type a name and **Save**. **Delete** removes the one shown.
-- **Primary** and **Secondary**: No Set or one of the 18 loot armor sets. With one set, all armor is from it; with two, the primary gets 5 pieces and the secondary 4. **CD** or **CDR** picks the rating to prefer.
+- Saved suits: pick one in the dropdown, or type a name and **Save**. **Delete** removes the one shown.
+- **Primary** and **Secondary**: Primary must be No Set or one of the 18 loot armor sets. With only the primary set selected, all 9 slots will be filled with the selection; With both, the primary selection gets 5 pieces and the secondary 4. **CD** or **CDR** picks the rating to prefer and do not need to be selected.
 - **Fill Armor** fills the empty armor slots one piece at a time: pieces adding the most missing legendary cantrips first, then epic, major and lower.
 - **Best Fill** checks combinations for the suit that fills the most slots and covers the most missing cantrips, in priority order. It stops at the time limit in Settings and keeps the best suit found.
 - Fill uses armor from every saved character. Multi-slot loot armor can go in any slot a reduction tool can make it ("(tailor)"). Not used: attuned items on other characters, items needing a higher level, and items in other saved suits unless "Fill armor from existing suits" is ticked.
