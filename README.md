@@ -48,14 +48,15 @@ The suit builder page is a tool where you can build and save different suits usi
 - **Primary** and **Secondary**: Primary must be No Set or one of the 18 loot armor sets. With only the primary set selected, all 9 slots will be filled with the selection; With both, the primary selection gets 5 pieces and the secondary 4. **CD** or **CDR** picks the rating to prefer and do not need to be selected.
 - **Fill Armor** fills the empty armor slots one piece at a time: pieces adding the most missing legendary cantrips first, then epic, major and lower.
 - **Best Fill** checks combinations for the suit that fills the most slots and covers the most missing cantrips, in priority order. It stops at the time limit in Settings and keeps the best suit found.
-- Fill uses armor from every saved character. Multi-slot loot armor can go in any slot a reduction tool can make it ("(tailor)"). Not used: attuned items on other characters, items needing a higher level, and items in other saved suits unless "Fill armor from existing suits" is ticked.
+- Multi-slot loot armor can go in any slot a reduction tool can be used on.
+- Not used: attuned items on other characters and items saved in suits, unless "Fill armor from existing suits" is ticked in the settings below.
 - Missing cantrips: legendary cantrips for attributes, wards and trained skills that no item covers, in priority order.
 - Double cantrips: the same cantrip at the same level on two items, for example `Legendary Strength (2)`.
-- "Include Aetheria and Cloak stats" and "Include weapon + shield stats" add those items to the totals.
+- "Include Aetheria and Cloak stats" and "Include weapon + shield stats" add stats from those items to the totals.
 
 ## Character Summary
 
-The cantrips and set bonuses active on the character, with the item each comes from and `(2)` when two worn items give it. Other worn-item spells that raise a skill or attribute are listed at the bottom.
+A list of cantrips and set bonuses active on the character. Duplicate cantrips are displayed with a `(2)`.
 
 ## Characters
 
