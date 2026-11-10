@@ -1,0 +1,35 @@
+{
+  "api": 2,
+  "mode": "companion",
+  "id": "global_inventory",
+  "name": "Global Inventory",
+  "short_name": "GI",
+  "version": "1.6.2",
+  "description": "Saves each character's items and searches the items of every character on this server, with the categories, filters and columns of Oracle of Dereth.",
+  "presentation": {
+    "title": "Global Inventory",
+    "icon": "gi.png",
+    "controls": "none",
+    "settings": false,
+    "status": true
+  },
+  "update_interval": 0.5,
+  "snapshot_fields": [
+    "inventory",
+    "inventory_revision",
+    "appraisal_revision",
+    "character_name",
+    "skills",
+    "level",
+    "enchantments",
+    "char_ints"
+  ],
+  "permissions": [
+    "data",
+    "identify",
+    "ui",
+    "state",
+    "profiles"
+  ],
+  "settings": []
+}
