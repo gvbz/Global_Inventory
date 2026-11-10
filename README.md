@@ -4,6 +4,8 @@ A global inventory and suit builder plugin for the AC:Unreal client. When the pl
 
 <img width="1253" height="899" alt="image" src="https://github.com/user-attachments/assets/904125b0-b154-4aa4-92f4-3249513b0ef0" />
 <img width="803" height="269" alt="gi_new1" src="https://github.com/user-attachments/assets/80059cc9-96ba-4f11-9c44-334d1e8f9335" />
+<img width="623" height="515" alt="gi_new5" src="https://github.com/user-attachments/assets/11c4233d-4566-4289-b895-8bd6582db8ce" />
+<img width="613" height="531" alt="gi_new6" src="https://github.com/user-attachments/assets/a6ba81c5-3e0b-409b-b07d-54dc72cde397" />
 <img width="450" height="659" alt="gi_new2" src="https://github.com/user-attachments/assets/75a8e0ef-22db-4867-82ba-38730f4bea9a" />
 <img width="458" height="288" alt="gi_new3" src="https://github.com/user-attachments/assets/558aed3f-7270-46c2-a4db-b690f8f4348c" />
 <img width="457" height="360" alt="gi_new4" src="https://github.com/user-attachments/assets/85959884-9997-4007-9191-97b76f98f013" />
