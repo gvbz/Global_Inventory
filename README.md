@@ -2,6 +2,7 @@
 
 A global inventory and suit builder plugin for the AC:Unreal client. When the plugin is enabled, it will read and appraise all items on the character and save them to a database. Items from each character can then be filtered, searched or added to a suit building tool. The categories, filters and columns follow Oracle of Dereth's Inventory window. Using the included HTML tool, you can convert your existing Virindi Global Inventory database found at VirindiPlugins\VirindiGlobalInventory\_Server.db
 
+<img width="1253" height="899" alt="image" src="https://github.com/user-attachments/assets/904125b0-b154-4aa4-92f4-3249513b0ef0" />
 <img width="803" height="269" alt="gi_new1" src="https://github.com/user-attachments/assets/80059cc9-96ba-4f11-9c44-334d1e8f9335" />
 <img width="450" height="659" alt="gi_new2" src="https://github.com/user-attachments/assets/75a8e0ef-22db-4867-82ba-38730f4bea9a" />
 <img width="458" height="288" alt="gi_new3" src="https://github.com/user-attachments/assets/558aed3f-7270-46c2-a4db-b690f8f4348c" />
@@ -32,6 +33,7 @@ Replace the files in `Installed\Global_Inventory` and press **Refresh**. Saved i
 - Click a row to show the item's description in chat. An item on the logged-in character is also selected. Hover a cell for its full text.
 - **Export JSON** writes the items listed to `Profiles\global_inventory\Library\Export`.
 - **Add to suit**: select an item, pick a slot in the list, press the Add button.
+- 
 - The filter, ticked boxes and sort are shared by all characters.
 
 ## Suit Builder
