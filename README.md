@@ -33,7 +33,7 @@ Replace the files in `Installed\Global_Inventory` and press **Refresh**. Saved i
 - Click a row to show the item's description in chat. An item on the logged-in character is also selected. Hover a cell for its full text.
 - **Export JSON** writes the items listed to `Profiles\global_inventory\Library\Export`.
 - **Add to suit**: select an item, pick a slot in the list, press the Add button.
-- 
+- Select an item and manually add it to a suit by using the drop down tailoring menu.
 - The filter, ticked boxes and sort are shared by all characters.
 
 ## Suit Builder
